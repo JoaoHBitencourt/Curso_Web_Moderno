@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Especificidade CSS</title>
+    <style>
+        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /*
+            Em linhas gerais..
+
+            1. regra com !important
+            2. seletores mais específicos
+            3. em caso de empate a ultima regra e processada
+        */
+
+        p {
+            background-color: #aaa;
+        }
+
+        .observacao {
+            background-color: #5f5;
+            border: dashed 5px;
+            padding: 200px!important;
+            font-size: 40px;
+        }
+
+        p.observacao { /* tem mais impacto por ser mais especifico portanto tem mais prioridade */
+            padding: 2px;
+            background: linear-gradient(to right, rgb(1, 170, 21), rgb(0, 187, 255));
+        }
+
+    </style>
+</head>
+
+<body>
+    <p class='observacao'>Olha essa observação!!!!</p>
+</body>
+
+</html>
