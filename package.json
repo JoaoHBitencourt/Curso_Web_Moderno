@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "lodash": "^4.17.21",
-    "node-schedule": "^2.1.1"
+    "node-schedule": "^2.1.1",
+    "react-router-dom": "^6.14.2"
   },
   "name": "ws-javascript",
   "version": "1.0.0",
